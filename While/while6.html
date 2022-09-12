@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média nota aluno</title>
+    <script>
+        // calcular média de 6 notas com valores entre 0 a 10
+
+        window.alert("Calcular a média de 6 notas (digite o valor de 0 a 10)");
+        var n1 = parseInt(prompt("Insira  a primeira nota: "));
+        while (n1 < 0 || n1 > 10) {
+            var n1 = parseInt(prompt("Insira de novo a primeira nota: "));
+        }
+
+        var n2 = parseInt(prompt("Insira  a segunda nota: "));
+        while (n2 < 0 || n2 > 10) {
+        var n2
+         = parseInt(prompt("Insira de novo a segunda nota: "));
+        }
+
+        var n3 = parseInt(prompt("Insira  a terceira nota: "));
+        while (n3 < 0 || n3 > 10) {
+            var n3 = parseInt(prompt("Insira de novo a terceira nota: "));
+        }
+
+        var n4 = parseInt(prompt("Insira  a quarta nota: "));
+        while (n4 < 0 || n4 > 10) {
+        var n4 = parseInt(prompt("Insira de novo a quarta nota: "));
+        }
+
+        var n5 = parseInt(prompt("Insira  a quinta nota: "));
+        while (n5 < 0 || n5 > 10) {
+            var n5 = parseInt(prompt("Insira de novo a quinta nota: "));
+        }
+
+        var n6 = parseInt(prompt("Insira  a sexta nota: "));
+        while (n6 < 0 || n6 > 10) {
+        var n6 = parseInt(prompt("Insira de novo a sexta nota: "));
+        }
+        
+        var media = (n1 + n2 +n3 + n4 + n5 + n6) / 6;
+        document.write("A média é: " + media);
+       
+        
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>

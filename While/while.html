@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While </title>
+</head>
+    <script>
+        // Ler 2 valores e fazer a divisão. O segundo não pode ser zero ou negativo
+
+        var valor1 = parseFloat(prompt("Insira o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Insira o segundo valor: "));
+        var div = valor1 / valor2;
+       
+        while (valor2 <= 0) {
+            valor2 = prompt("Insira um valor maior que 0. Insira novamente: ");
+        }
+
+        document.write(`Primeiro valor informado: ${valor1} <br> Segundo valor informado: ${valor2} <br> Valor da divisão: ${div}`);
+
+        
+    </script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <script>
+        // imprimir 10 primeiros valores maiores que 100
+        
+        var vezes = 1;
+        window.alert("Tabuada");
+        var numero = parseInt(prompt("Escreva o número da tabuada: "));
+
+        while(isNaN(numero)) {
+        numero = parseInt(prompt("Número inválido. Deseja ver o resultado da tabuada de qual número?"));
+    }
+        
+        while (vezes <= 10) {   
+            document.write(numero + " x " + vezes + " = " + (numero * vezes) + "<br>");
+            vezes++;
+            console.log(vezes);
+        } 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

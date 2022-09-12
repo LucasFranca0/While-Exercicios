@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+    <script>
+        // calcular média aritmética
+
+        var total = 0;
+        var valor = parseInt(prompt("Escreva o primeiro valor: "));
+        var valor1 = parseInt(prompt("Escreva o segundo valor: "));
+        var valor2 = valor1 - valor +1;
+
+        while (valor <= valor1) {
+            console.log(total);
+            document.write("Valor: " + valor + "<br>");
+            total = valor + total;
+            valor++;
+        }  
+        
+       
+        document.write("<br>" + "Valor total: " + total.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) + "<br><br>");
+        document.write("Intervalo de números: " + valor2 + "<br><br>");
+        document.write("Média aritmética: " + total/valor2);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

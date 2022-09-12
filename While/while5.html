@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média aluno</title>
+    <script>
+        // calcular média de um aluno e opção de calcular novamente
+        var opcao = prompt("Gostaria de calcular a média de um aluno? S/N");
+        var aprovados = 0;
+        
+        while (opcao == "S" || opcao == "s") {
+            var nota1 = parseInt(prompt("Insira a primeira nota: "));
+            var nota2 = parseInt(prompt("Insira a segunda nota: "));
+            var media = (nota1 + nota2) / 2;
+            window.alert("A média é: " + media);
+            
+            if (media >= 9.5){
+                    aprovados ++; 
+            }
+            window.alert("A quantidade de alunos aprovados foi: " + aprovados);
+            var opcao = prompt("Gostaria de calcular a média de um aluno? S/N");
+        }
+        while (opcao == "N" || opcao == "n"){
+            window.close;
+        }
+        
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>
